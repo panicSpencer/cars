@@ -9,14 +9,7 @@ do
 	case "$num" in
 	"1")
 		echo "Year?"
-		read year
-		echo "Make?"
-		read make
-		echo "model"
-		read model
-		newcar="$year:$make:$model"
-		My_old_cars.txt + newcar
-	"2") echo My_old_cars.txt ;;
+	"2") echo "Hello" ;;
 	"3") echo "Thank you goodbye" ;;
 	*) echo "Sorry, that is not a valid number" ;;
 done
