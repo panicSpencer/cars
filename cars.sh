@@ -2,16 +2,21 @@
 # cars.sh
 # author Spencer Panic
 
-N=1
-while [ "$N" -le "$i" ]
+while [ "$num" -ne "3" ]
 do
-  echo "Enter type to enter a new car, type 2 to display the list of cars, or type 3 to quit and exit the programa positive integer"
-	if [ $((N%2)) -eq 0 ]
-	then
-		echo $N "even"
-		N=$((N+1))
-	else
-		echo $N "odd"
-		N=$((N+1))
-	fi
+  echo "Type 1 to enter a new car, type 2 to display the list of cars, or type 3 to quit and exit the program"
+  read num
+	case "$num" in
+	"1")
+		echo "Year?"
+		read year
+		echo "Make?"
+		read make
+		echo "model"
+		read model
+		newcar="$year:$make:$model"
+		My_old_cars + newcar
+	"2") echo My_old_cars
+	"3") echo "Thank you goodbye"
+	*) echo "Sorry, that is not a valid number"
 done
