@@ -21,7 +21,7 @@ do
 		;;
 	3)
 		echo "Thank you goodbye" 
-		condition=False
+		condition=false
 		;;
 	*) echo "Sorry, that is not a valid number" ;;
 	esac
