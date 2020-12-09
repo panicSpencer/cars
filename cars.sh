@@ -5,8 +5,7 @@
 while [ "$num" -ne "3" ]
 do
   echo "Type 1 to enter a new car, type 2 to display the list of cars, or type 3 to quit and exit the program"
-  read num
-	case "$num" in
+	case $num in
 	"1")
 		echo "Year?" ;;
 	"2") echo "Hello" ;;
