@@ -16,7 +16,7 @@ do
 		echo "Model"
 		read model
 		newcar="$year:$make:$model"
-		cat newcar >> My_old_cars.txt ;;
+		cat newcar > My_old_cars.txt ;;
 	"2") echo "Hello" ;;
 	"3") echo "Thank you goodbye" ;;
 	*) echo "Sorry, that is not a valid number" ;;
