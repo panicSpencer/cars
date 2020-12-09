@@ -3,23 +3,26 @@
 # author Spencer Panic
 
 num=0
-while [ "$num" -ne "3" ]
+while [ $num -ne 3 ]
 do
-  echo "Type 1 to enter a new car, type 2 to display the list of cars, or type 3 to quit and exit the program"
+	echo "Type 1 to enter a new car, type 2 to display the list of cars, or type 3 to quit and exit the program"
 	read num
 	case $num in
-	"1") 
+	1) 
 		echo "Year?"
 		read year
 		echo "Make?"
 		read make
-		echo "Model"
+		echo "Model?"
 		read model
-		newcar="$year:$make:$model"
-		cat "$newcar" >> My_old_cars.txt ;;
-	"2") 
-		cat My_old_cars.txt ;;
-	"3") echo "Thank you goodbye" ;;
+		echo "${year}:${make}:${model}" >> My_old_cars.txt ;;
+	2) 
+		sort My_old_cars.txt 
+		;;
+	3)
+		echo "Thank you goodbye" 
+		break
+		;;
 	*) echo "Sorry, that is not a valid number" ;;
 	esac
 done
