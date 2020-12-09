@@ -9,13 +9,13 @@ do
 	read num
 	case $num in
 	"1") 
-		echo "Year?" ;;
-		read year ;;
-		echo "Make?" ;;
-		read make ;;
-		echo "Model" ;;
-		read model ;;
-		newcar="$year:$make:$model" ;;
+		echo "Year?"
+		read year
+		echo "Make?"
+		read make
+		echo "Model"
+		read model
+		newcar="$year:$make:$model"
 		cat newcar >> My_old_cars.txt ;;
 	"2") echo "Hello" ;;
 	"3") echo "Thank you goodbye" ;;
