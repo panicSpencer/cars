@@ -2,6 +2,7 @@
 # cars.sh
 # author Spencer Panic
 
+num=0
 while [ "$num" -ne "3" ]
 do
   
