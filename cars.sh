@@ -15,7 +15,7 @@ do
 		read make
 		echo "Model?"
 		read model
-		echo "$year:$make:$model" >> My_old_cars.txt ;;
+		echo "${year}:${make}:${model}" >> My_old_cars.txt ;;
 	2) 
 		sort My_old_cars.txt 
 		;;
