@@ -15,8 +15,8 @@ do
 		echo "model"
 		read model
 		newcar="$year:$make:$model"
-		My_old_cars + newcar
-	"2") echo My_old_cars
-	"3") echo "Thank you goodbye"
-	*) echo "Sorry, that is not a valid number"
+		My_old_cars.txt + newcar
+	"2") echo My_old_cars.txt ;;
+	"3") echo "Thank you goodbye" ;;
+	*) echo "Sorry, that is not a valid number" ;;
 done
