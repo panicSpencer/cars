@@ -2,8 +2,8 @@
 # cars.sh
 # author Spencer Panic
 
-num=0
-while [ $num -ne 3 ]
+condition=true
+while [ "$condition" = true ]
 do
 	echo "Type 1 to enter a new car, type 2 to display the list of cars, or type 3 to quit and exit the program"
 	read num
@@ -21,7 +21,7 @@ do
 		;;
 	3)
 		echo "Thank you goodbye" 
-		break
+		condition=False
 		;;
 	*) echo "Sorry, that is not a valid number" ;;
 	esac
