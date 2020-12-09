@@ -13,7 +13,7 @@ do
 		read year
 		echo "Make?"
 		read make
-		echo "Model
+		echo "Model"
 		read model
 		newcar="$year:$make:$model" ;;
 		
