@@ -16,7 +16,7 @@ do
 		echo "Model"
 		read model
 		newcar="$year:$make:$model"
-		cat newcar >> My_old_cars.txt ;;
+		cat "$newcar" >> My_old_cars.txt ;;
 	"2") 
 		cat My_old_cars.txt ;;
 	"3") echo "Thank you goodbye" ;;
