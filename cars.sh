@@ -8,7 +8,7 @@ do
   read num
 	case "$num" in
 	"1")
-		echo "Year?"
+		echo "Year?" ;;
 	"2") echo "Hello" ;;
 	"3") echo "Thank you goodbye" ;;
 	*) echo "Sorry, that is not a valid number" ;;
